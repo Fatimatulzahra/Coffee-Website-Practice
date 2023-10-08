@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+}
+
+#bg-image{
+    width: initial;
+    height: 90%;
+    background-image: url(https://media.istockphoto.com/photos/black-coffee-isolated-on-a-white-background-picture-id1286808993?b=1&k=20&m=1286808993&s=170667a&w=0&h=vx2BzwsU9GbZeoX1DlsGQUW-KoobX_sMBDqkgGWzXNM=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bg-image .bg-p{
+    float: left;
+    width: 350px;
+    font-size: 22px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+#bg-image .bg-p a{
+    color: saddlebrown;
+}
+
+#bg-image .bg-p a:hover{
+    color: black;
+}
+
+
+.bg-p {
+   width: 100%;
+   overflow: hidden;
+   margin-left: 400px;
+   max-width: 500px
+}
+
+.bg-p h2 {
+   animation: 2s slide-right;
+   animation-delay: 2s;
+}
+
+@keyframes bg-p {
+    from {
+       margin-left: -500px;
+    }
+
+    to {
+       margin-left: 0%;
+    }
+ }
+
+
+.menu-bar h4{
+    text-align: left;
+    padding-top: 10px;
+    padding-right: 50px;
+    /* font-style: italic; */
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Pacifico';
+}
+.menu-bar{
+    background:saddlebrown;
+    text-align: center;
+    padding: 5px;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: gainsboro;
+}
+
+.menu-bar ul li{
+    width: 150px; 
+    margin: 10px;
+    padding: 5px;
+    font-family: cursive;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: gainsboro;
+}
+
+#active, .menu-bar ul li:hover{
+    background: chocolate;
+    border-radius: 3px;
+}
+
+.sub-menu1 ul{
+    display: none;
+    /* position: absolute; */
+    background: chocolate;
+    border-radius: 3px;
+    /* width: 150px; */
+}
+
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;  
+    position: absolute;
+    margin-left: -5px;
+}
+ .menu-bar ul li:hover .sub-menu1 ul li{ 
+    width: 130px; 
+    padding: 10px; 
+    background: transparent; 
+    border-bottom: 1px dotted seashell; 
+    text-align: center; 
+} 
+
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li a:hover{
+    color: black;
+}
+
+.menu-bar .fa{
+    margin-right: 8px;
+}
+
+#coffee{
+    width: 100%;
+    height: 800px;
+    background: gainsboro;
+    /*background-image: url(./bg-aes2.jpg);*/
+    background-size: inherit;
+}
+.sub-menu2{
+  padding-right:20px;
+  display: inline-grid;
+  /* display:inline-table; */
+  margin-left:100px;
+}
+
+.sub-menu2 h4{
+  text-align:center;
+  font-size:25px;
+}
+
+#coffee h3{
+    font-style: oblique;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Pacifico';
+    font-size: 45px;
+    text-align: center;
+    color: saddlebrown;
+}
+
+
+.latte, .mocha, .cappuccino, .frappuccino, .coldbrew, .espresso{
+width:280px;
+height:200px;
+margin-top:70px;
+border:1px solid black;
+border-radius:50px;
+}
+
+#info{
+    width: 100%;
+    height: 500px;
+    background: gainsboro;
+}
+
+#service, #about{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    padding: 40px;
+   
+}
+  
+
+/*Contact styling*/
+#footer{
+    width: 100%;
+    height: 180px;
+    background-color: saddlebrown;
+}
+
+#footer .social{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.social i {
+    font-size:25px ;
+    justify-content: center;
+    color: black;
+}
+
+.p_serv, .a_serv{
+    width: 50%;
+    height: 200px;
+    padding: 20px;
+}
+
+.p_serv{
+    float: right;
+    margin-top:-200px ;
+}
+
+h1,h6{
+    padding: 10px;
+    margin-left: 30px;
+}
+
+p{
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+
+h6{
+    font-size: 20px;
+}
+
+#footer input{
+    width: 500px;
+    height: 30px;
+    margin-left: 500px;
+    text-align: left;
+    color: silver;
+    background-color: white;
+    font-size: 17px;
+}
+
+#footer{
+    background-color: saddlebrown;
+    height: 150px;
+}
+
+#footer p{
+    padding-top: 50px;
+    text-align: center;
+    
+}
+
+/* #drop-dwn:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background: coral;
+    margin-top: 25px;
+    margin-left: -15px;
+    border-radius: 3px;
+} */
